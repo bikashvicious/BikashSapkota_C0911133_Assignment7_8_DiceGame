@@ -1,8 +1,18 @@
 .container {
     text-align: center;
+    margin-top: 50px;
 }
 
 .dice {
+    display: flex;
+    justify-content: center;
+}
+
+.dice img {
+    margin: 0 10px;
+}
+
+.scoreboard {
     margin-top: 20px;
 }
 
@@ -10,6 +20,22 @@
     margin-bottom: 10px;
 }
 
+#rollButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#rollButton:hover {
+    background-color: #45a049;
+}
+
 #winner {
     font-weight: bold;
+    margin-top: 20px;
 }
