@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const diceImages = ['dice1.png', 'dice2.png', 'dice3.png', 'dice4.png', 'dice5.png', 'dice6.png'];
-
     let player1Score = 0;
     let player2Score = 0;
 
@@ -14,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const roll1 = Math.floor(Math.random() * 6) + 1;
         const roll2 = Math.floor(Math.random() * 6) + 1;
 
-        dice1Element.src = diceImages[roll1 - 1];
-        dice2Element.src = diceImages[roll2 - 1];
+        dice1Element.src = `dice${roll1}.png`;
+        dice2Element.src = `dice${roll2}.png`;
 
         const difference = Math.abs(roll1 - roll2);
         if (roll1 > roll2) {
