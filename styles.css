@@ -1,3 +1,11 @@
+body {
+    background: linear-gradient(to bottom, #2c3e50, #1c1c1c); /* Gradient black background */
+    color: #FFFFFF; /* White text color */
+    font-family: Arial, sans-serif; /* Use a sans-serif font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
 .container {
     text-align: center;
     margin-top: 50px;
@@ -34,7 +42,7 @@
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #4CAF50;
+    background-color: #3498db; /* Blue button color */
     color: white;
     border: none;
     cursor: pointer;
@@ -42,7 +50,7 @@
 }
 
 #rollButton:hover {
-    background-color: #45a049;
+    background-color: #2980b9; /* Darker blue on hover */
 }
 
 #winner {
