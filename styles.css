@@ -3,9 +3,19 @@
     margin-top: 50px;
 }
 
-.dice {
+.dice-container {
     display: flex;
     justify-content: center;
+}
+
+.dice-wrapper {
+    margin-right: 20px;
+}
+
+.player-label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .dice img {
