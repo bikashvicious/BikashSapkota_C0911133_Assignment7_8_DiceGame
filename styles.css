@@ -1,9 +1,10 @@
+/* styling for the entire page */
 body {
-    background-color: #121212; /* Darker blackish background */
-    color: #FFFFFF; /* White text color */
-    font-family: Arial, sans-serif; /* Use a sans-serif font */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    background-color: #121212;  
+    color: #FFFFFF;  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0; 
 }
 
 .container {
@@ -11,6 +12,7 @@ body {
     margin-top: 50px;
 }
 
+/* Use flexbox to center dice images horizontally */
 .dice-container {
     display: flex;
     justify-content: center;
@@ -38,6 +40,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Styling for the roll button */
 #rollButton {
     margin-top: 20px;
     padding: 10px 20px;
@@ -57,7 +60,7 @@ body {
     font-weight: bold;
     margin-top: 20px;
 }
-
+/* Keyframes for dice rolling animation */
 @keyframes rollDice {
     0% { transform: rotate(0deg); }
     25% { transform: rotate(90deg); }
@@ -65,11 +68,12 @@ body {
     75% { transform: rotate(270deg); }
     100% { transform: rotate(360deg); }
 }
-
+/* Apply rolling animation to dice images */
 .dice img {
     margin: 0 10px;
     animation: rollDice 1s linear infinite; /* Apply animation */
 }
+/* Apply rolling animation once to dice images */
 
 .roll-animation {
     animation: rollDice 1s linear forwards; /* Apply animation once */
