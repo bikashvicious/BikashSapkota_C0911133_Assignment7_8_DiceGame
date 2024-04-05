@@ -1,0 +1,15 @@
+.container {
+    text-align: center;
+}
+
+.dice {
+    margin-top: 20px;
+}
+
+.player {
+    margin-bottom: 10px;
+}
+
+#winner {
+    font-weight: bold;
+}
