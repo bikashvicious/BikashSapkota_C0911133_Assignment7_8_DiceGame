@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #2c3e50, #1c1c1c); /* Gradient black background */
+    background-color: #121212; /* Darker blackish background */
     color: #FFFFFF; /* White text color */
     font-family: Arial, sans-serif; /* Use a sans-serif font */
     margin: 0; /* Remove default margin */
@@ -56,4 +56,21 @@ body {
 #winner {
     font-weight: bold;
     margin-top: 20px;
+}
+
+@keyframes rollDice {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(180deg); }
+    75% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.dice img {
+    margin: 0 10px;
+    animation: rollDice 1s linear infinite; /* Apply animation */
+}
+
+.roll-animation {
+    animation: rollDice 1s linear forwards; /* Apply animation once */
 }
